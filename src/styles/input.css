@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("../assets/fonts/Roboto.woff2") format("woff2");
+}
+
+@theme {
+  --font-sans: "Roboto", "system-ui", sans-serif;
+}
+
+@layer utilities {
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .animate-fade-in-up {
+    animation: fade-in-up 1s ease-out forwards;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   @apply w-3;
