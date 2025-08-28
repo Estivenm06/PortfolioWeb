@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.15.0",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11",
