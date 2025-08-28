@@ -6,6 +6,8 @@ const column1 = document.querySelector(".column1");
 const column2 = document.querySelector(".column2");
 const projects = document.querySelector(".projects");
 
+const im = document.querySelector('.im');
+
 // IIFE Function
 (function () {
   const alreadyLanguage = localStorage.getItem("language");
@@ -69,6 +71,8 @@ function applyLanguageStyle() {
 // Function to insert the content of the page
 function applyContentWithLanguage() {
   if (language === "en") {
+  // Im
+  im.innerText = "Web Developer";
   // Column 1
   column1.innerHTML = `
     <h1 class='text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7'>Profile</h1>
@@ -448,6 +452,8 @@ function applyContentWithLanguage() {
       </ul>
     `;
   } else if (language === "es") {
+  // Soy
+  im.innerText = "Desarrollador Web";
   // Columna 1
   column1.innerHTML = `
     <h1 class='text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7'>Perfil</h1>
