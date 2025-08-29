@@ -150,9 +150,9 @@ function applyContentWithLanguage() {
         <ul class="flex flex-col justify-center items-center gap-5">
           <li class="flex flex-col justify-center items-center">
             <h4 class="font-bold uppercase text-md text-stone-800">
-              Universidad del Norte
+              Sena
             </h4>
-            <p class="font-light">Systems engineering, 2025 - en curso</p>
+            <p class="font-light">Analyst and Software Developer, 2025 - Not finished</p>
           </li>
           <li class="flex flex-col justify-center items-center">
             <h4 class="font-bold uppercase text-md text-stone-800">
@@ -216,46 +216,6 @@ function applyContentWithLanguage() {
       <ul class="grid sm:grid-cols-2 justify-center items-stretch gap-5">
         <li class="h-full">
           <a
-            href="https://estivenm06.github.io/final-project/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex flex-col ring-1 z-10 shadow-sm ring-gray-100 p-4 rounded-sm hover:text-stone-800 hover:ring-indigo-800 hover:shadow-lg transition-all duration-300 h-full"
-          >
-            <h2 class="text-stone-800 text-lg text-pretty">
-              Nebulã Corporation
-              <span class="font-bold">(First Version)</span>
-            </h2>
-            <p class="text-sm text-light text-justify leading-relaxed">
-              Our mission is to bring the wonders of the universe to your
-              screen, allowing you to explore the cosmos from the comfort of
-              your home.
-            </p>
-            <ul class="flex gap-2 w-full mt-5 flex-wrap">
-              <li
-                class="flex items-center justify-center shadow-md z-10 bg-gray-300 px-2 py-0.5 text-xs font-semibold rounded-md"
-              >
-                GIT
-              </li>
-              <li
-                class="flex items-center justify-center shadow-md z-10 bg-gray-300 px-2 py-0.5 text-xs font-semibold rounded-md"
-              >
-                HTML
-              </li>
-              <li
-                class="flex items-center justify-center shadow-md z-10 bg-gray-300 px-2 py-0.5 text-xs font-semibold rounded-md"
-              >
-                CSS
-              </li>
-              <li
-                class="flex items-center justify-center shadow-md z-10 bg-gray-300 px-2 py-0.5 text-xs font-semibold rounded-md"
-              >
-                JavaScript
-              </li>
-            </ul>
-          </a>
-        </li>
-        <li class="h-full">
-          <a
             href="https://novacorporation.onrender.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -263,7 +223,6 @@ function applyContentWithLanguage() {
           >
             <h2 class="text-stone-800 text-lg text-pretty">
               Nebulã Corporation
-              <span class="font-bold">(Latest Version)</span>
             </h2>
             <p class="text-sm text-light text-justify leading-relaxed">
               Our mission is to bring the wonders of the universe to your
@@ -522,9 +481,9 @@ function applyContentWithLanguage() {
   <ul class="flex flex-col justify-center items-center gap-5">
     <li class="flex flex-col justify-center items-center">
       <h4 class="font-bold uppercase text-md text-stone-800">
-        Universidad del Norte
+        Sena
       </h4>
-      <p class="font-light">Ingeniería de Sistemas, 2025 - en curso</p>
+      <p class="font-light">Analisis y Desarrollo Software, 2025 - En curso</p>
     </li>
     <li class="flex flex-col justify-center items-center">
       <h4 class="font-bold uppercase text-md text-stone-800">
@@ -588,29 +547,6 @@ function applyContentWithLanguage() {
 <ul class="grid sm:grid-cols-2 justify-center items-stretch gap-5">
   <li class="h-full">
     <a
-      href="https://estivenm06.github.io/final-project/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="flex flex-col ring-1 z-10 shadow-sm ring-gray-100 p-4 rounded-sm hover:text-stone-800 hover:ring-indigo-800 hover:shadow-lg transition-all duration-300 h-full"
-    >
-      <h2 class="text-stone-800 text-lg text-pretty">
-        Nebulã Corporation
-        <span class="font-bold">(Primera Versión)</span>
-      </h2>
-      <p class="text-sm text-light text-justify leading-relaxed">
-        Nuestra misión es llevar las maravillas del universo a tu pantalla,
-        permitiéndote explorar el cosmos desde la comodidad de tu hogar.
-      </p>
-      <ul class="flex gap-2 w-full mt-5 flex-wrap">
-        <li class="flex items-center justify-center shadow-md z-10 bg-gray-300 px-2 py-0.5 text-xs font-semibold rounded-md">GIT</li>
-        <li class="flex items-center justify-center shadow-md z-10 bg-gray-300 px-2 py-0.5 text-xs font-semibold rounded-md">HTML</li>
-        <li class="flex items-center justify-center shadow-md z-10 bg-gray-300 px-2 py-0.5 text-xs font-semibold rounded-md">CSS</li>
-        <li class="flex items-center justify-center shadow-md z-10 bg-gray-300 px-2 py-0.5 text-xs font-semibold rounded-md">JavaScript</li>
-      </ul>
-    </a>
-  </li>
-  <li class="h-full">
-    <a
       href="https://novacorporation.onrender.com/"
       target="_blank"
       rel="noopener noreferrer"
@@ -618,7 +554,6 @@ function applyContentWithLanguage() {
     >
       <h2 class="text-stone-800 text-lg text-pretty">
         Nebulã Corporation
-        <span class="font-bold">(Última Versión)</span>
       </h2>
       <p class="text-sm text-light text-justify leading-relaxed">
         Nuestra misión es llevar las maravillas del universo a tu pantalla,
