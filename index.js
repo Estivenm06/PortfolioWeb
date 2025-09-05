@@ -216,7 +216,7 @@ function applyContentWithLanguage() {
       <ul class="grid sm:grid-cols-2 justify-center items-stretch gap-5">
         <li class="h-full">
           <a
-            href="https://novacorporation.onrender.com/"
+            href="https://nova-corporation.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             class="flex flex-col ring-1 z-10 shadow-sm ring-gray-100 p-4 rounded-sm hover:text-stone-800 hover:ring-indigo-800 hover:shadow-lg transition-all duration-300 h-full"
@@ -326,7 +326,7 @@ function applyContentWithLanguage() {
             href="https://learnai-ruddy.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex flex-col ring-1 z-10 shadow-sm ring-gray-100 p-4 rounded-sm hover:text-stone-800 hover:ring-stone-800 hover:shadow-lg transition-all duration-300 h-full"
+            class="flex flex-col ring-1 z-10 shadow-sm ring-gray-100 p-4 rounded-sm hover:text-stone-800 hover:ring-[#ea580c] hover:shadow-lg transition-all duration-300 h-full"
           >
             <h2 class="text-pretty text-lg text-stone-800">Learn AI</h2>
 
