@@ -1,0 +1,37 @@
+---
+const { url } = Astro.request;
+const reqUrl = new URL(url, Astro.site || "http://localhost");
+const currentLang = reqUrl.pathname.startsWith("/es") ? "es" : "en";
+---
+
+<div
+  class="w-full flex justify-end items-center p-3 fixed z-100 border-none top-0 left-0"
+>
+  <button
+    onclick={currentLang === "en" ? "" : "window.location.href='/'"}
+    class={`${
+      currentLang === "en"
+        ? "bg-stone-600 text-white"
+        : "bg-gray-200 text-stone-600 transition-colors duration-200 ease-in-out cursor-pointer hover:text-white hover:bg-stone-600"
+    }
+    px-3
+    py-1
+    rounded-l-lg
+    shadow-md`}
+    aria-current={currentLang === "en" ? "page" : undefined}>EN</button
+  >
+  <button
+    onclick={currentLang === "es" ? "" : "window.location.href='/es'"}
+    class={`${
+      currentLang === "es"
+        ? "bg-stone-600 text-white"
+        : "bg-gray-200 text-stone-600 transition-colors duration-200 ease-in-out cursor-pointer hover:text-white hover:bg-stone-600"
+    }
+    px-3
+    py-1
+    rounded-r-lg
+    shadow-md
+  `}
+    aria-current={currentLang === "es" ? "page" : undefined}>ES</button
+  >
+</div>

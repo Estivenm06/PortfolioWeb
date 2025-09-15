@@ -1,0 +1,263 @@
+---
+const { url } = Astro.request;
+const reqUrl = new URL(url, Astro.site || "http://localhost");
+const currentLang = reqUrl.pathname.startsWith("/es") ? "es" : "en";
+---
+
+<main
+  class="my-25 px-10 md:px-30 mx-auto grid md:grid-cols-2 gap-25 text-justify"
+>
+  <!-- Column 1: Profile, Skills, Languages -->
+  <section class="space-y-10">
+    <article class="column1">
+      {
+        currentLang === "en" ? (
+          <>
+            <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+              Profile
+            </h1>
+            <p class="font-light leading-relaxed">
+              I'm a passionate junior developer with experience in JavaScript,
+              TypeScript, Python, React.js, and backend development with
+              Node.js. Fluent in English and Spanish, I thrive in diverse teams
+              and bring strong communication skills, eagerness to learn, and a
+              drive to contribute to dynamic environments.
+            </p>
+            <article>
+              <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+                Skills
+              </h1>
+              <ul class="flex flex-col justify-center items-center gap-5">
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">Javascript</p>
+                </li>
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">UI Design</p>
+                </li>
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">React / React Native</p>
+                </li>
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">MongoDB</p>
+                </li>
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">Node.js</p>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+                Languages
+              </h1>
+              <ul class="flex flex-col justify-center items-center text-balance gap-5">
+                <li class="flex justify-center flex-col items-center">
+                  <h2 class="font-bold uppercase text-md text-stone-800 text-center">
+                    Spanish
+                  </h2>
+                  <p class="font-light">Native</p>
+                </li>
+                <li class="flex flex-col justify-center items-center">
+                  <h2 class="font-bold uppercase text-md text-stone-800 text-center">
+                    English
+                  </h2>
+                  <a
+                    href="https:cert.efset.org/4vECty"
+                    target="_blank"
+                    class="text-blue-800 hover:font-bold duration-300 transition-all font-light"
+                  >
+                  <span class="sr-only">Visit Estiven Mejia's Certificate</span>
+                    B2 Upper Intermediate
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </>
+        ) : (
+          <>
+            <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+              Perfil
+            </h1>
+            <p class="font-light leading-relaxed">
+              Soy un apasionado desarrollador junior con experiencia en
+              JavaScript, TypeScript, Python, React.js y desarrollo backend con
+              Node.js. Fluido en inglés y español, destaco en equipos diversos y
+              aporto sólidas habilidades de comunicación, disposición para
+              aprender y motivación para contribuir en entornos dinámicos.
+            </p>
+            <article>
+              <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+                Habilidades
+              </h1>
+              <ul class="flex flex-col justify-center items-center gap-5">
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">JavaScript</p>
+                </li>
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">Diseño de Interfaces (UI)</p>
+                </li>
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">React / React Native</p>
+                </li>
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">MongoDB</p>
+                </li>
+                <li class="flex justify-center flex-col items-center">
+                  <p class="font-light">Node.js</p>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+                Idiomas
+              </h1>
+              <ul class="flex flex-col justify-center items-center text-balance gap-5">
+                <li class="flex justify-center flex-col items-center">
+                  <h2 class="font-bold uppercase text-md text-stone-800 text-center">
+                    Español
+                  </h2>
+                  <p class="font-light">Nativo</p>
+                </li>
+                <li class="flex flex-col justify-center items-center">
+                  <h2 class="font-bold uppercase text-md text-stone-800 text-center">
+                    Inglés
+                  </h2>
+                  <a
+                    href="https://cert.efset.org/4vECty"
+                    target="_blank"
+                    class="text-blue-800 hover:font-bold duration-300 transition-all font-light"
+                  >
+                  <span class="sr-only">Visitar el certificado de Estiven Mejia</span>
+                    B2 Intermedio Alto
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </>
+        )
+      }
+    </article>
+  </section>
+
+  <!-- Column 2: Studies, Experience -->
+  <section class="space-y-6">
+    <article class="column2">
+      {
+        currentLang === "en" ? (
+          <>
+            <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+              Studies
+            </h1>
+            <ul class="flex flex-col justify-center items-center gap-5">
+              <li class="flex flex-col justify-center items-center">
+                <h2 class="font-bold uppercase text-md text-stone-800">Sena</h2>
+                <p class="font-light">
+                  Analyst and Software Developer, 2025 - Not finished
+                </p>
+              </li>
+              <li class="flex flex-col justify-center items-center">
+                <h2 class="font-bold uppercase text-md text-stone-800">
+                  Codetec
+                </h2>
+                <p class="font-light">Graphic Designer, 2023 - 2024</p>
+              </li>
+            </ul>
+            <article>
+              <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+                Experience
+              </h1>
+              <ul class="flex flex-col justify-center items-center gap-5">
+                <li>
+                  <h2 class="font-bold uppercase text-md text-stone-800 text-center">
+                    Monitor (Volunteer)
+                  </h2>
+                  <span class="font-semibold uppercase text-sm text-stone-600 text-center">
+                    Fundacion ROFÉ - Mar 2024 to Nov 2024
+                  </span>
+                  <p class="font-light leading-relaxed">
+                    My role as a monitor was to be the leader of young aspiring
+                    entrepreneurs interested in web logic programming, guiding
+                    them throughout their courses so they are able to learn new
+                    knowledge and emphasize web development.
+                  </p>
+                </li>
+                <li>
+                  <h2 class="font-bold uppercase text-md text-stone-800 text-center">
+                    Nurse Robot
+                  </h2>
+                  <span class="font-semibold uppercase text-sm text-stone-600 text-center">
+                    Unisimón - Feb 2024 to Nov 2024
+                  </span>
+
+                  <p class="font-light leading-relaxed">
+                    My role as a leader of this project was to make a robot with
+                    new technology to innovate in the healthcare field, which
+                    focused on a program to recognize vital signs with less
+                    effort and reducing the risk of misdiagnosis.
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </>
+        ) : (
+          <>
+            <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+              Estudios
+            </h1>
+            <ul class="flex flex-col justify-center items-center gap-5">
+              <li class="flex flex-col justify-center items-center">
+                <h2 class="font-bold uppercase text-md text-stone-800">Sena</h2>
+                <p class="font-light">
+                  Analisis y Desarrollo Software, 2025 - En curso
+                </p>
+              </li>
+              <li class="flex flex-col justify-center items-center">
+                <h2 class="font-bold uppercase text-md text-stone-800">
+                  Codetec
+                </h2>
+                <p class="font-light">Diseño Gráfico, 2023 - 2024</p>
+              </li>
+            </ul>
+            <article>
+              <h1 class="text-xl font-bold uppercase tracking-[0.5rem] text-center mb-7">
+                Experiencia
+              </h1>
+              <ul class="flex flex-col justify-center items-center gap-5">
+                <li>
+                  <h2 class="font-bold uppercase text-md text-stone-800 text-center">
+                    Monitor (Voluntariado)
+                  </h2>
+                  <span class="font-semibold uppercase text-sm text-stone-600 text-center">
+                    Fundación ROFÉ - Mar 2024 a Nov 2024
+                  </span>
+                  <p class="font-light leading-relaxed">
+                    Mi rol como monitor fue ser el líder de jóvenes aspirantes a
+                    emprendedores interesados en la programación lógica web,
+                    guiándolos a lo largo de sus cursos para que pudieran
+                    adquirir nuevos conocimientos y enfocarse en el desarrollo
+                    web.
+                  </p>
+                </li>
+                <li>
+                  <h2 class="font-bold uppercase text-md text-stone-800 text-center">
+                    Robot Enfermero
+                  </h2>
+                  <span class="font-semibold uppercase text-sm text-stone-600 text-center">
+                    Unisimón - Feb 2024 a Nov 2024
+                  </span>
+
+                  <p class="font-light leading-relaxed">
+                    Mi rol como líder de este proyecto fue crear un robot con
+                    nuevas tecnologías para innovar en el área de la salud,
+                    enfocado en un programa que reconociera signos vitales con
+                    menos esfuerzo y redujera el riesgo de diagnósticos
+                    erróneos.
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </>
+        )
+      }
+    </article>
+  </section>
+</main>
